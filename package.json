@@ -1,0 +1,24 @@
+{
+  "name": "pinecity-commutes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "24/7 WhatsApp Cloud API bot for Pinecity Commutes (Shoolini-Solan corridor)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node src/server.js --init-only"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1"
+  }
+}
